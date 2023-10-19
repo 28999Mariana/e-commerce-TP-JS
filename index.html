@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- librería de JS Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/carrito.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="container navbar"id="home">
+            <h1>ZEGNA</h1>
+            <ul>
+              <li><a href="./index.html">SHOP</a></li>
+              <li><a href="./pages/collections.html">COLLECTIONS</a></li>
+              <li><a href="./pages/carrito.html"><i class="bi bi-cart-fill"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="searchInputContainer">
+            <div>
+                <input type="text" placeholder="Write the name of the product..." id="searchInput" class="searchInput">
+                <i class="bi bi-search"></i>
+            </div>
+        </div>  
+        
+    </header>
+    <section id="banner">
+        <ul class="menu">
+            <li>
+                <button id="todos" class="boton-menu boton-categoria active">Browse all products</button>
+            </li>
+            <li>
+                <button id="pantalones" class="boton-menu boton-categoria">Pants</button>
+            </li>
+            <li>
+                <button id="camisas" class="boton-menu boton-categoria">Shirts</button>
+            </li>
+            <li>
+                <button id="abrigos" class="boton-menu boton-categoria">Coats</button>
+            </li>
+            <li>
+                <button id="accesorios" class="boton-menu boton-categoria">Accessories</button>
+            </li>
+            <li>
+                <a class="boton-menu boton-carrito" href="./pages/carrito.html"><i class="bi bi-cart-fill"></i>Cart<span id="number" class="number">0</span></a>
+            </li>
+        </ul>
+    </section>
+
+    
+    <div class="wrapper">
+        
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Browse all products</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Acá se completa con JS -->
+
+                
+            </div>
+
+            <div id="product-details"></div>
+        </main>
+    </div>
+    <footer>
+        <p class="texto-footer">© 2023 Mariana Velázquez</p>
+        <div><h6>All rights reserved &copys_ZEGNA</h6></div>
+
+        <div class="social-i">
+        <ul>
+            <li><i class="bi bi-facebook"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+            <li><i class="bi bi-twitter"></i></li>
+        </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

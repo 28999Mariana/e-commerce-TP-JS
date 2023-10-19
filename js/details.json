@@ -1,0 +1,123 @@
+[
+    {
+        "id": "camisa-01",
+        "nombre": "Shirt Cashco",
+        "descripcion": "The soft, lightweight Cashco construction of this long-sleeved shirt creates the perfect backdrop for its stylish navy and black checkered pattern. In addition, it makes its color stand out to the maximum thanks to the saturated effect it causes. This shirt is finished with an English collar.",
+        "precio": 4000
+    },
+    {
+        "id": "camisa-02",
+        "nombre": "Pure Knit Shirt",
+        "descripcion": "Update your business wardrobe with the aqua green pure cotton jersey long-sleeved shirt. Cotton jersey is perfect for busy days, thanks to its soft and breathable qualities. This rich color shirt is designed with a one-piece collar.",
+        "precio": 4500
+    },
+    {
+      "id": "camisa-03",
+      "nombre": "Lixis Shirt",
+      "descripcion": "High contrast ivory white and black checks embellish the Cashco long sleeve shirt. The luxurious blend of warm cashmere and lightweight cotton gives the garment its soft, plush texture. It fastens with practical press studs.",
+      "precio": 4800
+  },
+  {
+      "id": "camisa-04",
+      "nombre": "Linen Shirt",
+      "descripcion": "Made from a natural, lightweight fabric, the short-sleeved shirt in pure linen comes in a delicate light beige. This short sleeve shirt is finished with a one-piece collar and hand-stitched details.",
+      "precio": 3800
+  },
+  {
+      "id": "camisa-05",
+      "nombre": "Felix Shirt",
+      "descripcion": "Update your business wardrobe with the yellow pure cotton jersey long-sleeved shirt. Cotton jersey is perfect for busy days, thanks to its soft and breathable qualities. This rich color shirt is designed with a one-piece collar.",
+      "precio": 4300
+  },
+  {
+      "id": "pantalon-01",
+      "nombre": "Jogger Pants",
+      "descripcion": "The navy blue Jogger pants are made of High Performance™ cotton and wool, an exclusive Zegna fabric that is very breathable and comfortable. These Jogger pants feature a drawstring waistband for a perfect fit and stylish leather details. The diagonal pockets are complemented by its elongated lines.",
+      "precio": 12000
+  },
+  {
+    "id": "pantalon-02",
+    "nombre": "High Trousers",
+    "descripcion": "Slim style meets innovative fabrics in these tailored navy pants, made with High Performance™ wool, an ultra-breathable, durable, comfortable and year-round wool fabric. Thanks to their construction, these dress pants are a perfect wardrobe staple. The slim fit and smooth front elegantly lengthen your legs.",
+    "precio": 11000
+  },
+  {
+    "id": "pantalon-03",
+    "nombre": "Linen Pants", 
+    "descripcion": "Made from pure linen, a breathable fabric, these ivory white shorts are the perfect option for casual plans. The shorts feature a folded hem. Adjustable laces complement its loose fit.",
+    "precio": 9000
+  },
+  {
+      "id": "pantalon-04",
+      "nombre": "Denim Pants",
+      "descripcion": "These light blue garment-dyed stretch cotton Roccia pants give you a slim fit without sacrificing comfort. Its classic design is perfect for a casual set of clothing. Double belt loops finish this model.",
+      "precio": 10000
+  },
+  {
+      "id": "pantalon-05",
+      "nombre": "Mohair Pants",
+      "descripcion": "The Mohair pants come in stretch cotton gabardine, beige in color and with a slim fit. This model lengthens the lines of the legs and thus elegantizes any of your outfits. These garment-dyed pants have a button fastening.",
+      "precio": 10000
+  },
+  {
+    "id": "abrigo-01",
+    "nombre": "Ghiaccio Jacket",
+    "descripcion": "The Ghiaccio quilted jacket in white Oasi Cashmere features one of Zegna is most refined fabrics. The fine fabric is reimagined the fine quilted jacket designed for the new era of work and leisure. Decorated with a mandarin collar and a detachable hood, the white Ghiaccio jacket is also waterproof. Sophisticated leather details complete this model.",
+    "precio": 45000
+},
+{
+    "id": "abrigo-02",
+    "nombre": "Overcoat Top",
+    "descripcion": "The Cima Hooded Coat, Navy Blue, is made from Zegna is innovative fabric, Oasi Cashmere Elements, which is made up of exclusive cashmere and a waterproof membrane, making it resistant to inclement weather. Its smooth finish gives it an elegant style ready for your adventures. The leather and carefully crafted applications complement its stylized design.",
+    "precio": 50000
+},
+{
+    "id": "abrigo-03",
+    "nombre": "Wool Overcoat",
+    "descripcion": "This navy blue sartorial overcoat is made from Zegna is exclusive fabric, Oasi Cashmere; an elegant option as a coat. It comes in a classic color so that the quality of its construction takes on greater prominence. Minimalist details complement its slim fit.",
+    "precio": 68000
+},
+{
+    "id": "abrigo-04",
+    "nombre": "Bomber Jacket",
+    "descripcion": "This navy bomber jacket is made from one of Zegna is most innovative fabrics, Trofeo™ Elements, which is composed of wool fibers and a waterproof membrane to create a soft, lightweight garment that is resistant to inclement weather. Its classic bomber cut is finished with a mandarin collar and ribbed edges.",
+    "precio": 40000
+},
+{
+  "id": "abrigo-05",
+  "nombre": "Hibrid Jacket",
+  "descripcion": "This hooded ski jacket is made of black Oasi Cashmere Elements and features a breathable technical membrane that makes it waterproof without adding weight. The extra-fine fibers of Zegna cashmere give it a luxurious and soft finish. This jacket is equipped with waterproof zipper pockets, a ski pass pocket and windproof cuffs.",
+  "precio": 40000
+},
+{
+  "id": "accesorio-01",
+  "nombre": "Braided Belt",
+  "descripcion": "The navy stretch rayon braided belt reimagines a classic design with contemporary materials and details. Updated with an ultra-black enamel finish, the iconic Triple Stitch™ buckle connects the accessory to a long tradition of luxurious Italian craftsmanship. Its discreet color is ideal for elegant casual clothing.",
+  "precio": 2700
+},
+{
+  "id": "accesorio-02",
+  "nombre": "Plex Belt",
+  "descripcion": "The rich textures of the Luxury Leisurewear belt collection will elegantize your casual models with refined materials and elegant metal finishes. The most versatile model in the line: this dark gray suede belt has a vicuña-colored nubuck lining, as well as a one-size-fits-all construction for greater comfort. The slightly square buckle in silver finishes this accessory.",
+  "precio": 3200
+},
+{
+  "id": "accesorio-03",
+  "nombre": "Oasi Cap",
+  "descripcion": "The wine-colored Oasi Cashmere baseball cap is made from Zegna is signature cashmere fibers and is complemented by a soft cashmere-blend lining. The Zegna 232 Road Brand Mark label on the back and the metallic Zegna logo finish this model.",
+  "precio": 2300
+},
+{
+"id": "accesorio-04",
+"nombre": "Oasi Scarf",
+"descripcion": "The purple Oasi Cashmere scarf reflects Zegna is ethical vision for natural fabrics. The brand is precious cashmere lends its original finish to this accessory presented in a distinguished color.",
+"precio": 2700
+},
+{
+"id": "accesorio-05",
+"nombre": "Cashmeretie",
+"descripcion": "The Black Silk Party Tie is made from pure Mulberry silk and is designed to complement your most elegant suits. The simple construction of this elegant tie fully reveals the shine that comes from its natural construction.",
+"precio": 3200
+}
+  
+]

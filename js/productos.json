@@ -1,0 +1,203 @@
+[
+    
+    {
+        "id": "camisa-01",
+        "titulo": "Shirt Cashco",
+        "imagen": "../img/camisa01.avif",
+        "categoria": {
+            "nombre": "Shirts",
+            "id": "camisas"
+        },
+        "precio": 4000
+    },
+    {
+        "id": "camisa-02",
+        "titulo": "Pure Knit Shirt",
+        "imagen": "../img/camisa02.avif",
+        "categoria": {
+            "nombre": "Shirts",
+            "id": "camisas"
+        },
+        "precio": 4500
+    },
+    {
+        "id": "camisa-03",
+        "titulo": "Lixis Shirt",
+        "imagen": "../img/camisa03.avif",
+        "categoria": {
+            "nombre": "Shirts",
+            "id": "camisas"
+        },
+        "precio": 4800
+    },
+    {
+        "id": "camisa-04",
+        "titulo": "Linen Shirt",
+        "imagen": "../img/camisa04.avif",
+        "categoria": {
+            "nombre": "Shirts",
+            "id": "camisas"
+        },
+        "precio": 3800
+    },
+    {
+        "id": "camisa-05",
+        "titulo": "Felix Shirt",
+        "imagen": "../img/camisa05.avif",
+        "categoria": {
+            "nombre": "Shirts",
+            "id": "camisas"
+        },
+        "precio": 4300
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Jogger pants",
+        "imagen": "../img/pantalon01.avif",
+        "categoria": {
+            "nombre": "Pants",
+            "id": "pantalones"
+        },
+        "precio": 12000
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "High trousers",
+        "imagen": "../img/pantalon02.avif",
+        "categoria": {
+            "nombre": "Pants",
+            "id": "pantalones"
+        },
+        "precio": 11000
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "Linen Pants",
+        "imagen": "../img/pantalon03.avif",
+        "categoria": {
+            "nombre": "Pants",
+            "id": "pantalones"
+        },
+        "precio": 9000
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Denim pants",
+        "imagen": "../img/pantalon04.avif",
+        "categoria": {
+            "nombre": "Pants",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon-05",
+        "titulo": "Mohair pants",
+        "imagen": "../img/pantalon05.avif",
+        "categoria": {
+            "nombre": "Pants",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "abrigo-01",
+        "titulo": "Ghiaccio jacket",
+        "imagen": "../img/abrigo01.jpg",
+        "categoria": {
+            "nombre": "Coats",
+            "id": "abrigos"
+        },
+        "precio": 45000
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "Overcoat Top",
+        "imagen": "../img/abrigo02.jpg",
+        "categoria": {
+            "nombre": "Coats",
+            "id": "abrigos"
+        },
+        "precio": 50000
+    },
+    {
+        "id": "abrigo-03",
+        "titulo": "Wool Overcoat",
+        "imagen": "../img/abrigo03.jpg",
+        "categoria": {
+            "nombre": "Coats",
+            "id": "abrigos"
+        },
+        "precio": 68000
+    },
+    {
+        "id": "abrigo-04",
+        "titulo": "Bomber Jacket",
+        "imagen": "../img/abrigo04.jpg",
+        "categoria": {
+            "nombre": "Coats",
+            "id": "abrigos"
+        },
+        "precio": 40000
+    },
+    {
+        "id": "abrigo-05",
+        "titulo": "Hybrid Jacket",
+        "imagen": "../img/abrigo05.jpg",
+        "categoria": {
+            "nombre": "Coats",
+            "id": "abrigos"
+        },
+        "precio": 40000
+    },
+    {
+        "id": "accesorio-01",
+        "titulo": "Braided Belt",
+        "imagen": "../img/accesorios01.avif",
+        "categoria": {
+            "nombre": "Accessories",
+            "id": "accesorios"
+        },
+        "precio": 2700
+    },
+    {
+        "id": "accesorio-02",
+        "titulo": "Plex Belt",
+        "imagen": "../img/accesorios02.avif",
+        "categoria": {
+            "nombre": "Accessories",
+            "id": "accesorios"
+        },
+        "precio": 3200
+    },
+    {
+        "id": "accesorio-03",
+        "titulo": "Oasi Cap",
+        "imagen": "../img/accesorios03.avif",
+        "categoria": {
+            "nombre": "Accessories",
+            "id": "accesorios"
+        },
+        "precio": 2300
+    },
+    {
+        "id": "accesorio-04",
+        "titulo": "Oasi Scarf",
+        "imagen": "../img/accesorios04.avif",
+        "categoria": {
+            "nombre": "Accessories",
+            "id": "accesorios"
+        },
+        "precio": 2700
+    },
+    {
+        "id": "accesorio-05",
+        "titulo": "Cashmere Tie",
+        "imagen": "../img/accesorios05.avif",
+        "categoria": {
+            "nombre": "Accessories",
+            "id": "accesorios"
+        },
+        "precio": 3200
+    }
+]
