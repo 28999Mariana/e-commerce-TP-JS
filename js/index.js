@@ -8,6 +8,7 @@ fetch("./js/productos.json")
         cargarProductos(productos); //Los productos cargan en la pag
     })
 
+
 //Tomo los elementos del DOM y declaro variables
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -35,7 +36,7 @@ function cargarProductos(productosElegidos) {
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
                 <button class="producto-agregar" id="${producto.id}">Add</button>
-                <button class="seeMore" id="seeMore${producto.id}">See More</button>
+                <a href="../pages/details.html?id=${producto.id}" class="seeMore btn" id="seeMore${producto.id}">See More</a>
             </div>
         `;
         contenedorProductos.append(div);
@@ -44,7 +45,40 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar(); // Se actualizan los botones 'agregar'
 }
 
-// Evento para actualizar los botones de agregar
+//se itera sobre c/ btn de categorías 
+botonesCategorias.forEach(boton => {
+    // agrego un evento que escucha el evento 'click' a c/btn
+    boton.addEventListener("click", (e) => {
+
+        // se remueve la clase 'active' de todos los btn de categorías
+        botonesCategorias.forEach(boton => boton.classList.remove("active"));
+
+        // agrego la clase 'active' al btn que fue clickeado
+        e.currentTarget.classList.add("active");
+
+        // verifico si el btn clickeado no tiene el ID "todos"
+        if (e.currentTarget.id != "todos") {
+            // encuentro el producto correspondiente a la categoría del btn clickeado
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            
+            // cambio el texto del título principal x el nombre de la categoría elegida
+            tituloPrincipal.innerText = productoCategoria.categoria.nombre;
+
+            // filtro los productos de la categoría elegida
+            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+
+            // cargo los productos de la categoría elegida
+            cargarProductos(productosBoton);
+        } else {
+            // si se clickea el btn "todos" se muestra todos los productos
+            tituloPrincipal.innerText = "Browse all products";
+            cargarProductos(productos);
+        }
+    })
+});
+
+
+// Evento para actualizar los btn de agregar
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
 
@@ -66,7 +100,26 @@ if (productosEnCarritoLS) {
 
 // Función para agregar un product al cart
 function agregarAlCarrito(e) {
-    // Aquí se muestra la notificación usando Toastify
+    // Acá se muestra la notificación de la librería Toastify
+    Toastify({
+        text: "Added Product",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, cyan , grey)",
+          borderRadius: "20px",
+          textTransform: "uppercase",
+          fontSize: ".75rem"
+        },
+        offset: {
+            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '100px' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
 
     // Obtengo ID del producto
     const idBoton = e.currentTarget.id;
@@ -91,25 +144,8 @@ function actualizarNumber() {
     number.innerText = nuevoNumber;
 }
 
-/* See More */
 
-// Una vez que todo el contenido de la pag carga
-document.addEventListener('DOMContentLoaded', () => {
-  
-    // Selecciona los elementos con la clase 'seeMore' y los guarda en una lista
-    const botonesSeeMore = document.querySelectorAll('.seeMore');
-  
-    // Por cada botón 'See More'
-    botonesSeeMore.forEach(boton => {
-      
-      // Se hace un evento 'click' que se dispara al hacer click en el btn
-      boton.addEventListener('click', (e) => {
-        
-        // toma el ID del producto del botón.
-        const idProducto = e.target.dataset.id;
-        
-        //Se abriría (no se abre! jaja) details.html con el ID del producto
-        window.open(`./pages/details.html?id=${idProducto}`);
-      });
-    });
-});
+
+
+
+

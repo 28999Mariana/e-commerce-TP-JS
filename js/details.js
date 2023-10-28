@@ -1,27 +1,56 @@
-// Una vez que se carga el DOM se ejecuta el código
 document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
 
-    // Tomo el ID del producto de los parámetros de la URL
-    const urlParametros = new URLSearchParams(window.location.search);
-    const idProducto = urlParametros.get('id');
+    if (id) {
+        const detailsContainer = document.getElementById('details-container');
+        const detailsUrl = `../js/details.json`; // Ruta al archivo details.json
 
-    // Pido tener los detalles del producto de 'details.json'
-    fetch('./js/details.json')
-        .then(response => response.json())
-        .then(data => {
-            // Encuentra el ID del producto
-            const producto = data.find(item => item.id === idProducto);
+        fetch(detailsUrl)
+            .then(response => response.json())
+            .then(data => {
+                const producto = data.find(item => item.id === id);
 
-            // se toma el contenedor de detalles del producto
-            const detailsContainer = document.getElementById('product-details');
+                if (producto) {
+                    const detailsHTML = `
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        ${producto.imagenes_slider.slice(0, 3).map(imagen => `
+                          <div class="swiper-slide">
+                            <img class="producto-imagen-slider"width:100px height:200px src="${imagen}" alt="${producto.titulo}">
+                          </div>
+                        `).join('')}
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="producto-img">
+                    <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+                    <h2>${producto.nombre}</h2>
+                    <p>${producto.descripcion}</p>
+                    <p class="p-price">Price: ${producto.price}</p></div>`;
 
-            // se completa el contenedor con la descripción del producto
-            detailsContainer.innerHTML = `
-                <h2>${producto.nombre}</h2>
-                <p>${producto.descripcion}</p>
-                <!-- Falta agregar un carousel de imágenes descriptivas del producto -->
-            `;
-        });
+                    detailsContainer.innerHTML = detailsHTML;
+
+                    // empieza Swiper con el efecto "fade"
+                    const swiper = new Swiper('.swiper-container', {
+                        effect: 'fade',
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                } else {
+                    detailsContainer.innerHTML = "<p>Producto no encontrado</p>";
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    }
 });
 
-  
+
